@@ -1,0 +1,40 @@
+repo: "circle-maker"
+canvasCourse: "467503"
+canvasAssignment: "4202554"
+
+naming: true
+commits: 2
+
+html:
+  - path: "index.html"
+    valid: true
+    bestPractices: true
+    has:
+      - "script"
+    search:
+      - "jquery"
+
+css:
+  - path: "css/main.css"
+    valid: true
+    bestPractices: true
+    has:
+      - ['html', 'box-sizing', 'border-box']
+      - ['.ball', 'position', 'absolute']
+      - ['.ball', 'width', '100px']
+      - ['.ball', 'height', '100px']
+      - ['.ball', 'border-radius', '50px']
+
+js:
+  - path: "js/main.js"
+    valid: true
+    bestPractices: true
+    search:
+      - "\\.on\\('keydown', function"
+      - "\\.css\\('left', "
+      - "\\.css\\('top', "
+      - "Math\\.random\\(\\)"
+      - "\\$\\('body'\\)"
+      - "\\$\\('html'\\)"
+      - "\\$\\('<div>'\\)"
+      - "\\.append\\("
